@@ -1,0 +1,42 @@
+[project]
+name = "nova"
+version = "1.0.0"
+description = "Multimodal LangGraph agent: document RAG, timestamped video/audio retrieval, web search, finance tools and evidence verification."
+requires-python = ">=3.11"
+readme = "README.md"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+addopts = "-q -m 'not e2e'"
+markers = [
+    "e2e: end-to-end tests against the real local model (opt-in: pytest -m e2e)",
+    "network: needs internet access (web search / market data)",
+]
+filterwarnings = [
+    "ignore::DeprecationWarning",
+    "ignore::PendingDeprecationWarning",
+    "ignore:.*allowed_objects.*",
+]
+
+[tool.ruff]
+line-length = 120
+target-version = "py311"
+extend-exclude = [".venv", "data", "logs", "examples/upstream_tutorial"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP", "BLE"]
+ignore = ["E501", "B008", "UP007", "B905"]  # B905: pairwise zip(a, a[1:]) is intentionally non-strict
+
+[tool.ruff.lint.per-file-ignores]
+"tests/**" = ["B", "BLE"]
+"evaluation/calibrate_threshold.py" = ["E402"]
+"nova/agent/baseline.py" = ["UP"]  # intentionally faithful to the pre-upgrade code
+
+[tool.mypy]
+python_version = "3.12"
+packages = ["nova", "api"]
+ignore_missing_imports = true
+check_untyped_defs = true
+warn_unused_ignores = false
+plugins = ["pydantic.mypy"]

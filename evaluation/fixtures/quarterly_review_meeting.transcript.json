@@ -1,0 +1,168 @@
+{
+ "segments": [
+  {
+   "segment_id": "seg_0001",
+   "start_time": 0.0,
+   "end_time": 14.5,
+   "text": "Good morning everyone, this is the third quarter business review for Northwind India.",
+   "language": "en",
+   "speaker": null
+  },
+  {
+   "segment_id": "seg_0002",
+   "start_time": 14.5,
+   "end_time": 41.0,
+   "text": "Let's start with the numbers. Revenue for the third quarter came in at 8 crore rupees, slightly above plan.",
+   "language": "en",
+   "speaker": null
+  },
+  {
+   "segment_id": "seg_0003",
+   "start_time": 41.0,
+   "end_time": 70.2,
+   "text": "Customer churn was 4.2 percent this quarter, down from 5.1 percent in the second quarter.",
+   "language": "en",
+   "speaker": null
+  },
+  {
+   "segment_id": "seg_0004",
+   "start_time": 70.2,
+   "end_time": 118.6,
+   "text": "Our biggest growth came from the enterprise segment, which now has 140 paying customers.",
+   "language": "en",
+   "speaker": null
+  },
+  {
+   "segment_id": "seg_0005",
+   "start_time": 118.6,
+   "end_time": 162.0,
+   "text": "Marketing spent most of its budget on the Delhi and Mumbai trade shows.",
+   "language": "en",
+   "speaker": null
+  },
+  {
+   "segment_id": "seg_0006",
+   "start_time": 340.0,
+   "end_time": 371.5,
+   "text": "Now, pricing. The enterprise plan has not changed in two years and our costs are up.",
+   "language": "en",
+   "speaker": null
+  },
+  {
+   "segment_id": "seg_0007",
+   "start_time": 371.5,
+   "end_time": 402.8,
+   "text": "After a long discussion we agreed to increase the enterprise plan price by 15 percent from January.",
+   "language": "en",
+   "speaker": null
+  },
+  {
+   "segment_id": "seg_0008",
+   "start_time": 402.8,
+   "end_time": 431.0,
+   "text": "The starter plan price stays the same, we don't want to lose small customers.",
+   "language": "en",
+   "speaker": null
+  },
+  {
+   "segment_id": "seg_0009",
+   "start_time": 431.0,
+   "end_time": 466.4,
+   "text": "Arjun, can you prepare the revised pricing sheet? Arjun said he will have it ready by Friday.",
+   "language": "en",
+   "speaker": null
+  },
+  {
+   "segment_id": "seg_0010",
+   "start_time": 550.0,
+   "end_time": 584.3,
+   "text": "Next topic is the hiring plan for next year.",
+   "language": "en",
+   "speaker": null
+  },
+  {
+   "segment_id": "seg_0011",
+   "start_time": 584.3,
+   "end_time": 621.7,
+   "text": "We will hire 12 engineers in Bengaluru, mostly for the mobile and data teams, by the end of March.",
+   "language": "en",
+   "speaker": null
+  },
+  {
+   "segment_id": "seg_0012",
+   "start_time": 621.7,
+   "end_time": 655.0,
+   "text": "Meera will share the detailed hiring budget next week.",
+   "language": "en",
+   "speaker": null
+  },
+  {
+   "segment_id": "seg_0013",
+   "start_time": 655.0,
+   "end_time": 690.2,
+   "text": "We also talked about whether to open a small office in Singapore, but no decision was made on that.",
+   "language": "en",
+   "speaker": null
+  },
+  {
+   "segment_id": "seg_0014",
+   "start_time": 743.2,
+   "end_time": 781.0,
+   "text": "Let's talk about targets. Given the third quarter result, we are raising the fourth quarter revenue target to 10 crore rupees.",
+   "language": "en",
+   "speaker": null
+  },
+  {
+   "segment_id": "seg_0015",
+   "start_time": 781.0,
+   "end_time": 811.5,
+   "text": "Everyone agreed the 10 crore target is ambitious but achievable if the enterprise pipeline converts.",
+   "language": "en",
+   "speaker": null
+  },
+  {
+   "segment_id": "seg_0016",
+   "start_time": 811.5,
+   "end_time": 846.0,
+   "text": "The marketing budget for the fourth quarter will be 1.5 crore rupees.",
+   "language": "en",
+   "speaker": null
+  },
+  {
+   "segment_id": "seg_0017",
+   "start_time": 960.0,
+   "end_time": 994.7,
+   "text": "Open items. We still do not know whether the Pune office lease will be renewed in December.",
+   "language": "en",
+   "speaker": null
+  },
+  {
+   "segment_id": "seg_0018",
+   "start_time": 994.7,
+   "end_time": 1027.3,
+   "text": "Someone needs to follow up with the logistics vendor about the delayed hardware shipments.",
+   "language": "en",
+   "speaker": null
+  },
+  {
+   "segment_id": "seg_0019",
+   "start_time": 1027.3,
+   "end_time": 1060.0,
+   "text": "Also, nobody has confirmed who owns the customer support hiring yet.",
+   "language": "en",
+   "speaker": null
+  },
+  {
+   "segment_id": "seg_0020",
+   "start_time": 1180.0,
+   "end_time": 1205.4,
+   "text": "That's everything for today. Thanks everyone, see you at the next review.",
+   "language": "en",
+   "speaker": null
+  }
+ ],
+ "language": "en",
+ "engine": "fixture",
+ "model": null,
+ "duration_seconds": 1205.4
+}

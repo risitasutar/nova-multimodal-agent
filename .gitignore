@@ -1,0 +1,32 @@
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Runtime data (databases, vector indexes, logs) — never commit
+data/
+logs/
+*.db
+*.db-shm
+*.db-wal
+chatbot.db*
+
+# Evaluation scratch. Per-case records (results/**/runs/*.jsonl) ARE committed: every
+# published metric is regenerated from them with --report-only. Logs are not.
+evaluation/results/**/runs/*.log
+evaluation/results/**/runs/superseded/
+
+# OS / editors
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

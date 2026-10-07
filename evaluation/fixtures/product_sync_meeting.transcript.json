@@ -1,0 +1,56 @@
+{
+ "segments": [
+  {
+   "segment_id": "seg_0001",
+   "start_time": 0.0,
+   "end_time": 20.0,
+   "text": "Welcome to the product sync for the Orbit mobile app.",
+   "language": "en",
+   "speaker": null
+  },
+  {
+   "segment_id": "seg_0002",
+   "start_time": 20.0,
+   "end_time": 55.5,
+   "text": "The launch of the Orbit mobile app is delayed to November 15 because of the payments integration.",
+   "language": "en",
+   "speaker": null
+  },
+  {
+   "segment_id": "seg_0003",
+   "start_time": 55.5,
+   "end_time": 90.0,
+   "text": "We decided to build the app with Flutter so one team can ship both Android and iOS.",
+   "language": "en",
+   "speaker": null
+  },
+  {
+   "segment_id": "seg_0004",
+   "start_time": 90.0,
+   "end_time": 128.0,
+   "text": "The approved budget for the mobile launch is 40 lakh rupees.",
+   "language": "en",
+   "speaker": null
+  },
+  {
+   "segment_id": "seg_0005",
+   "start_time": 128.0,
+   "end_time": 160.0,
+   "text": "Kavya will run the beta test with 200 users starting next Monday.",
+   "language": "en",
+   "speaker": null
+  },
+  {
+   "segment_id": "seg_0006",
+   "start_time": 160.0,
+   "end_time": 192.0,
+   "text": "We still need to decide whether the app will support offline mode at launch.",
+   "language": "en",
+   "speaker": null
+  }
+ ],
+ "language": "en",
+ "engine": "fixture",
+ "model": null,
+ "duration_seconds": 192.0
+}

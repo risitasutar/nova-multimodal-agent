@@ -1,0 +1,12 @@
+# Normalise text to LF in the repository; never touch binary fixtures.
+* text=auto
+*.pdf binary
+*.mp4 binary
+*.wav binary
+*.mp3 binary
+*.png binary
+*.jpg binary
+*.bat text eol=crlf
+
+# Recorded evaluation outputs contain verbatim model text; do not flag its whitespace.
+evaluation/results/** -whitespace

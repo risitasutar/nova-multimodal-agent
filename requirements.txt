@@ -1,0 +1,27 @@
+# Nova runtime dependencies (pinned for reproducibility; tested on Python 3.12, Windows 11).
+# Install: pip install -r requirements.txt
+streamlit==1.65.0
+fastapi==0.142.2
+uvicorn==0.54.0
+python-multipart==0.0.32
+pydantic==2.13.5
+pydantic-settings==2.15.0
+python-dotenv==1.2.4
+requests==2.34.2
+langgraph==1.0.1
+langgraph-checkpoint==3.0.1
+langgraph-checkpoint-sqlite==3.0.3
+langchain==0.3.30
+langchain-core==0.3.86
+langchain-community==0.3.31
+langchain-ollama==0.3.10
+langchain-text-splitters==0.3.11
+langsmith==0.14.4
+ddgs==9.16.0
+faiss-cpu==1.15.1
+numpy==2.5.3
+pypdf==6.19.0
+# Video / audio (no torch, no FFmpeg binary: PyAV bundles the FFmpeg libraries)
+faster-whisper==1.2.1
+av==19.0.1
+yt-dlp==2026.8.19

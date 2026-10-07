@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+html, body, [class*="css"], .stMarkdown, .stTextInput, button, input, textarea {
+    font-family: 'Inter', sans-serif !important;
+}
+
+/* ---------- App background ---------- */
+.stApp {
+    background:
+        radial-gradient(circle at 15% 10%, rgba(124, 58, 237, 0.22), transparent 40%),
+        radial-gradient(circle at 85% 0%, rgba(6, 182, 212, 0.18), transparent 38%),
+        radial-gradient(circle at 50% 100%, rgba(236, 72, 153, 0.12), transparent 45%),
+        #0b0d17;
+}
+header[data-testid="stHeader"] { background: transparent; }
+.block-container { padding-top: 2rem; padding-bottom: 6rem; max-width: 1000px; }
+
+/* ---------- Sidebar ---------- */
+section[data-testid="stSidebar"] {
+    background: rgba(17, 19, 34, 0.85);
+    backdrop-filter: blur(14px);
+    border-right: 1px solid rgba(255, 255, 255, 0.06);
+}
+section[data-testid="stSidebar"] .stButton > button {
+    width: 100%;
+    text-align: left;
+    justify-content: flex-start;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    color: #cbd5e1;
+    border-radius: 12px;
+    padding: 0.55rem 0.8rem;
+    font-size: 0.86rem;
+    transition: all 0.18s ease;
+}
+section[data-testid="stSidebar"] .stButton > button:hover {
+    background: rgba(124, 58, 237, 0.15);
+    border-color: rgba(124, 58, 237, 0.55);
+    color: #fff;
+    transform: translateX(3px);
+}
+section[data-testid="stSidebar"] .stButton > button[kind="primary"] {
+    background: linear-gradient(135deg, #7c3aed, #06b6d4);
+    border: none;
+    color: white;
+    font-weight: 600;
+    justify-content: center;
+    box-shadow: 0 6px 20px rgba(124, 58, 237, 0.35);
+}
+section[data-testid="stSidebar"] .stButton > button[kind="primary"]:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 10px 26px rgba(124, 58, 237, 0.5);
+}
+
+.brand {
+    display: flex; align-items: center; gap: 0.7rem;
+    margin-bottom: 1.1rem;
+}
+.brand-logo {
+    width: 42px; height: 42px; border-radius: 12px;
+    background: linear-gradient(135deg, #7c3aed, #06b6d4);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.35rem;
+    box-shadow: 0 6px 18px rgba(124, 58, 237, 0.45);
+}
+.brand-name { font-size: 1.3rem; font-weight: 800; color: #f8fafc; line-height: 1.1; }
+.brand-sub { font-size: 0.75rem; color: #94a3b8; }
+
+.side-label {
+    font-size: 0.7rem; font-weight: 700; letter-spacing: 0.09em;
+    text-transform: uppercase; color: #64748b;
+    margin: 1.3rem 0 0.5rem;
+}
+
+.doc-card {
+    border-radius: 14px; padding: 0.8rem 0.9rem;
+    background: linear-gradient(135deg, rgba(16, 185, 129, 0.14), rgba(6, 182, 212, 0.1));
+    border: 1px solid rgba(16, 185, 129, 0.35);
+    color: #d1fae5; font-size: 0.84rem;
+}
+.doc-card b { color: #fff; word-break: break-all; }
+.doc-stats { display: flex; gap: 0.45rem; margin-top: 0.5rem; }
+.doc-stats span {
+    background: rgba(255,255,255,0.08); border-radius: 999px;
+    padding: 0.12rem 0.55rem; font-size: 0.72rem; color: #a7f3d0;
+}
+.doc-empty {
+    border-radius: 14px; padding: 0.75rem 0.9rem;
+    border: 1px dashed rgba(148, 163, 184, 0.3);
+    color: #94a3b8; font-size: 0.82rem;
+}
+
+.chip-row { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+.chip {
+    font-size: 0.74rem; padding: 0.25rem 0.6rem; border-radius: 999px;
+    background: rgba(124, 58, 237, 0.12);
+    border: 1px solid rgba(124, 58, 237, 0.3);
+    color: #c4b5fd;
+}
+
+/* ---------- Hero ---------- */
+.hero { text-align: center; margin: 2.5rem 0 2rem; }
+.hero-badge {
+    display: inline-block; font-size: 0.75rem; font-weight: 600;
+    padding: 0.3rem 0.8rem; border-radius: 999px;
+    background: rgba(124, 58, 237, 0.15);
+    border: 1px solid rgba(124, 58, 237, 0.4);
+    color: #c4b5fd; margin-bottom: 1rem;
+}
+.hero h1 {
+    font-size: 3rem; font-weight: 800; margin: 0; line-height: 1.1;
+    background: linear-gradient(120deg, #f8fafc 10%, #a78bfa 50%, #22d3ee 90%);
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+}
+.hero p { color: #94a3b8; font-size: 1.05rem; margin-top: 0.8rem; }
+
+/* Suggestion cards (main-area buttons) */
+.block-container .stButton > button {
+    width: 100%; min-height: 92px;
+    text-align: left; justify-content: flex-start; align-items: flex-start;
+    white-space: pre-line;
+    background: rgba(255, 255, 255, 0.035);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px; color: #e2e8f0;
+    padding: 0.9rem 1rem; font-size: 0.9rem;
+    transition: all 0.2s ease;
+}
+.block-container .stButton > button:hover {
+    border-color: rgba(34, 211, 238, 0.6);
+    background: rgba(34, 211, 238, 0.07);
+    transform: translateY(-3px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.35);
+    color: #fff;
+}
+
+/* ---------- Chat header ---------- */
+.chat-header {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 0.8rem 1.1rem; margin-bottom: 1rem;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.07);
+}
+.chat-title { font-weight: 700; color: #f1f5f9; font-size: 1.05rem; }
+.chat-meta { font-size: 0.78rem; color: #64748b; }
+.live-dot {
+    display: inline-block; width: 8px; height: 8px; border-radius: 50%;
+    background: #22c55e; margin-right: 6px;
+    box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.7);
+    animation: pulse 1.8s infinite;
+}
+@keyframes pulse {
+    0% { box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.6); }
+    70% { box-shadow: 0 0 0 8px rgba(34, 197, 94, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(34, 197, 94, 0); }
+}
+
+/* ---------- Chat messages ---------- */
+[data-testid="stChatMessage"] {
+    border-radius: 18px;
+    padding: 0.9rem 1.1rem;
+    margin-bottom: 0.8rem;
+    animation: fadeUp 0.35s ease;
+}
+@keyframes fadeUp {
+    from { opacity: 0; transform: translateY(8px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+[data-testid="stChatMessage"]:has([data-testid="stChatMessageAvatarUser"]),
+[data-testid="stChatMessage"]:has([aria-label="Chat message from user"]) {
+    background: linear-gradient(135deg, rgba(124, 58, 237, 0.2), rgba(124, 58, 237, 0.08));
+    border: 1px solid rgba(124, 58, 237, 0.3);
+}
+[data-testid="stChatMessage"]:has([data-testid="stChatMessageAvatarAssistant"]),
+[data-testid="stChatMessage"]:has([aria-label="Chat message from assistant"]) {
+    background: rgba(255, 255, 255, 0.035);
+    border: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+/* ---------- Chat input ---------- */
+/* Left-align text inside sidebar conversation buttons */
+section[data-testid="stSidebar"] .stButton > button > div,
+section[data-testid="stSidebar"] .stButton > button [data-testid="stMarkdownContainer"] {
+    width: 100%; justify-content: flex-start; text-align: left;
+}
+section[data-testid="stSidebar"] .stButton > button p {
+    text-align: left; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+section[data-testid="stSidebar"] .stButton > button[kind="primary"] p,
+section[data-testid="stSidebar"] .stButton > button[kind="primary"] > div { text-align: center; justify-content: center; }
+section[data-testid="stSidebar"] .stButton > button:disabled {
+    opacity: 1; color: #fff;
+    background: rgba(124, 58, 237, 0.2); border-color: rgba(124, 58, 237, 0.6);
+}
+
+[data-testid="stBottom"] > div { background: transparent; }
+[data-testid="stChatInput"] {
+    border-radius: 18px !important;
+    border: 1px solid rgba(124, 58, 237, 0.45) !important;
+    background: rgba(17, 19, 34, 0.9) !important;
+    box-shadow: 0 0 0 4px rgba(124, 58, 237, 0.08), 0 12px 30px rgba(0,0,0,0.4);
+}
+
+/* Status boxes / expanders */
+[data-testid="stExpander"], [data-testid="stStatusWidget"] {
+    border-radius: 14px !important;
+    border-color: rgba(34, 211, 238, 0.25) !important;
+    background: rgba(6, 182, 212, 0.05);
+}
+
+/* File uploader */
+[data-testid="stFileUploaderDropzone"] {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px dashed rgba(124, 58, 237, 0.45);
+    border-radius: 14px;
+}
+
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-thumb { background: rgba(124, 58, 237, 0.35); border-radius: 8px; }
+
+/* ---------- Nova v1 additions ---------- */
+.badge {
+    display: inline-block; font-size: 0.72rem; font-weight: 600;
+    padding: 0.12rem 0.55rem; border-radius: 999px; margin-right: 0.35rem;
+    border: 1px solid rgba(255,255,255,0.12); color: #cbd5e1; background: rgba(255,255,255,0.05);
+}
+.badge.ok   { color: #86efac; border-color: rgba(34,197,94,.45);  background: rgba(34,197,94,.10); }
+.badge.warn { color: #fcd34d; border-color: rgba(245,158,11,.45); background: rgba(245,158,11,.10); }
+.badge.bad  { color: #fca5a5; border-color: rgba(239,68,68,.45);  background: rgba(239,68,68,.10); }
+.meta-row { margin-top: 0.5rem; }
+.source-card {
+    border-radius: 12px; padding: 0.55rem 0.75rem; margin-bottom: 0.45rem;
+    background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08);
+    font-size: 0.82rem; color: #cbd5e1;
+}
+.source-card b { color: #f1f5f9; }
+.source-card .preview { color: #94a3b8; margin-top: 0.25rem; white-space: pre-wrap; }
+.approval-card {
+    border-radius: 16px; padding: 1rem 1.1rem; margin: 0.6rem 0 0.8rem;
+    background: linear-gradient(135deg, rgba(245,158,11,.14), rgba(124,58,237,.10));
+    border: 1px solid rgba(245,158,11,.45); color: #fde68a;
+}
+.approval-card li { color: #e2e8f0; }
+.status-line { font-size: 0.78rem; color: #94a3b8; }
+.status-line .dot-ok { color: #22c55e; } .status-line .dot-bad { color: #ef4444; }

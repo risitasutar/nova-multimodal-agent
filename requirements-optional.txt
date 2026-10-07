@@ -1,0 +1,11 @@
+# Optional integrations (not needed for the default local setup).
+# Hosted OpenAI-compatible LLM endpoint (NOVA_LLM_PROVIDER=openai_compatible):
+langchain-openai>=0.3,<0.4
+# MCP tutorial stage (examples/upstream_tutorial/langgraph_mcp_backend.py):
+langchain-mcp-adapters>=0.1
+aiosqlite>=0.21
+# Original AI Video Assistant providers (optional alternatives):
+#   NOVA_WHISPER_BACKEND=openai  → openai-whisper (needs torch + the FFmpeg binary on PATH)
+openai-whisper>=20231117
+#   NOVA_MEDIA_LLM_PROVIDER=mistral → Mistral for meeting summaries/insights
+langchain-mistralai>=0.2

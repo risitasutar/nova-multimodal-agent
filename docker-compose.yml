@@ -1,0 +1,39 @@
+# Local stack: Nova API + Nova UI, talking to an LLM endpoint.
+#   docker compose up --build                       # uses Ollama running on the host
+#   docker compose --profile ollama up --build      # also runs Ollama in a container
+services:
+  api:
+    build: .
+    image: nova:latest
+    env_file: [.env]
+    environment:
+      OLLAMA_BASE_URL: ${OLLAMA_BASE_URL:-http://host.docker.internal:11434}
+    extra_hosts: ["host.docker.internal:host-gateway"]
+    ports: ["8000:8000"]
+    volumes: [nova-data:/data]
+    healthcheck:
+      test: ["CMD", "curl", "-fsS", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+
+  ui:
+    image: nova:latest
+    depends_on: [api]
+    env_file: [.env]
+    environment:
+      OLLAMA_BASE_URL: ${OLLAMA_BASE_URL:-http://host.docker.internal:11434}
+    extra_hosts: ["host.docker.internal:host-gateway"]
+    command: ["streamlit", "run", "streamlit_app_pro.py", "--server.address=0.0.0.0", "--server.port=8501", "--server.headless=true"]
+    ports: ["8501:8501"]
+    volumes: [nova-data:/data]   # UI and API share conversations and document indexes
+
+  ollama:
+    profiles: ["ollama"]
+    image: ollama/ollama:latest
+    ports: ["11434:11434"]
+    volumes: [ollama-models:/root/.ollama]
+
+volumes:
+  nova-data:
+  ollama-models:

@@ -1,0 +1,2 @@
+system,id,category,passed,failed,tool_correct,answer_correct,citation_correct,groundedness,hit_at_1,hit_at_4,mrr,latency_ms,tools,retrieved_pages,cited_pages,verification_status,error,answer
+enhanced,cite-03,citation,True,False,True,True,True,0.5,1.0,1.0,1.0,15709.5,document,"[10, 1, 8, 7]",[10],VERIFIED,,"Northwind's new assembly plant will be located in Monterrey, Mexico. This information is mentioned on page 10 of the report [PDF: northwind_annual_report_2025.pdf, p.10]."

@@ -1,0 +1,41 @@
+---
+config:
+  flowchart:
+    curve: linear
+---
+graph TD;
+	__start__([<p>__start__</p>]):::first
+	validate_input(validate_input)
+	classify_query(classify_query)
+	planner(planner)
+	approval_gate(approval_gate)
+	execute_tools(execute_tools)
+	compute(compute)
+	check_evidence(check_evidence)
+	generate_response(generate_response)
+	verify_response(verify_response)
+	finalize_response(finalize_response)
+	__end__([<p>__end__</p>]):::last
+	__start__ --> validate_input;
+	approval_gate -.-> execute_tools;
+	approval_gate -.-> finalize_response;
+	check_evidence -.-> finalize_response;
+	check_evidence -.-> generate_response;
+	classify_query -.-> finalize_response;
+	classify_query -.-> generate_response;
+	classify_query -.-> planner;
+	compute --> check_evidence;
+	execute_tools --> compute;
+	generate_response --> verify_response;
+	planner -.-> approval_gate;
+	planner -.-> execute_tools;
+	planner -.-> finalize_response;
+	planner -.-> generate_response;
+	validate_input -.-> classify_query;
+	validate_input -.-> finalize_response;
+	verify_response -.-> finalize_response;
+	verify_response -.-> generate_response;
+	finalize_response --> __end__;
+	classDef default fill:#f2f0ff,line-height:1.2
+	classDef first fill-opacity:0
+	classDef last fill:#bfb6fc
